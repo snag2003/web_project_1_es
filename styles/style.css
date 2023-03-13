@@ -14,12 +14,214 @@
   min-height: 600px;
   max-height: 756px;
   /* parameters for the header section */
+  background-color: #F2F2F2;
+  display: flex;
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
+.logo_place_header {
+  height: 31px;
+  width: 154px;
+  margin-top: 32px;
+  margin-left: 64px;
+  position: absolute;
+  z-index: 2;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  width: 730px;
+  margin-left: 64px;
+  z-index: 2;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+}
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  bottom: 32px;
+  margin-left: 64px;
+  z-index: 2;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__main-illustration {
+  height: 608px;
+  width: 756px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .header__square-pic {
+  position: absolute;
+  top: 64px;
+  right: 0;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+}
+
+.description {
+  display: flex;
+  justify-content: center; 
+}
+
+.two-columns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.two-columns__brief {
+  width: 175px;
+  color: #2f80ed;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.digits {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.section-title {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: space-between;
+  margin: auto;
+  list-style: none;
+}
+
+.table__cell {
+  width: 250px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.feynman {
+  height: 790px;
+  position: relative;
+  background-image: url("../images/feynman.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-color: #F2F2F2;
+}
+
+.feynman__title {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.feynman__subtitle {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.kaufman {
+  margin: 0;
+  background-color: #1F1F1F;
+}
+
+.section-title_theme_dark {
+  display: flex;
+  justify-content: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+
+.section-subtitle_theme_dark {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color: white;
+}
+
+.table_theme_dark {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 90px;
+  list-style: none;
 }
 
 /* including elements with key-value modifiers */
@@ -28,4 +230,24 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.kaufman__triangle {
+  height: 660px;
+  width: 636px;
+  position: absolute;
+  right: -124px;
+  overflow: hidden;
 }
