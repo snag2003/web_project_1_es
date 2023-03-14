@@ -6,7 +6,7 @@
   /* here we've set a maximum page width */
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", "Arial", "sans-serif";
 }
 
 .header {
@@ -16,14 +16,17 @@
   /* parameters for the header section */
   background-color: #F2F2F2;
   display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .logo_place_header {
   height: 31px;
   width: 154px;
-  margin-top: 32px;
-  margin-left: 64px;
   position: absolute;
+  top: 30px;
+  left: 64px;
   z-index: 2;
 }
 
@@ -41,12 +44,16 @@
 .header__subtitle {
   width: 388px;
   position: absolute;
-  bottom: 32px;
-  margin-left: 64px;
+  bottom: 30px;
+  left: 64px;
   z-index: 2;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+}
+
+.header__link {
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -58,7 +65,7 @@
   z-index: 1;
 }
 
-.header__square-pic {
+.header__square {
   position: absolute;
   top: 64px;
   right: 0;
@@ -69,7 +76,8 @@
 
 .description {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  margin-bottom: 100px;
 }
 
 .two-columns {
@@ -104,13 +112,9 @@
   font-weight: bold;
 }
 
-.digits {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
 .section-title {
   margin-top: 100px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   line-height: 1.15;
@@ -120,6 +124,7 @@
 
 .section-subtitle {
   margin-top: 20px;
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
   line-height: 34px;
@@ -131,10 +136,11 @@
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
-  align-items: space-between;
   justify-content: space-between;
-  margin: auto;
   list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
 }
 
 .table__cell {
@@ -142,6 +148,7 @@
 }
 
 .table__heading {
+  margin-bottom: 20px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -160,24 +167,28 @@
   background-position: bottom left;
   background-repeat: no-repeat;
   background-color: #F2F2F2;
+  overflow: auto;
+  text-align: center;
 }
 
 .feynman__title {
   margin-top: 100px;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  width: 775px;
+  top: 100px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .feynman__subtitle {
-  margin-top: 70px;
   display: flex;
   justify-content: center;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  margin-top: 70px;
 }
 
 .feynman__link {
@@ -187,41 +198,61 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  color: #2f80ed;
 }
 
 .kaufman {
-  margin: 0;
   background-color: #1F1F1F;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.kaufman__triangle {
+  height: 636px;
+  width: 660px;
+  position: absolute;
+  top: 0;
+  right: -124px;
+  z-index: 0;
 }
 
 .section-title_theme_dark {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  position: relative;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   color: white;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  width: 60%;
+  z-index: 2;
 }
 
 .section-subtitle_theme_dark {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   color: white;
+  z-index: 2;
 }
 
 .table_theme_dark {
   width: 1100px;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  align-items: space-between;
   justify-content: space-between;
-  margin: auto;
-  margin-bottom: 90px;
+  margin: 0 auto 90px;
   list-style: none;
+  z-index: 2;
+  text-align: left;
 }
 
 /* including elements with key-value modifiers */
@@ -233,6 +264,7 @@
 }
 
 .table__heading_theme_dark {
+  margin-bottom: 20px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -244,10 +276,64 @@
   font-weight: normal;
 }
 
-.kaufman__triangle {
-  height: 660px;
-  width: 636px;
-  position: absolute;
-  right: -124px;
-  overflow: hidden;
+.footer {
+  min-height: 350px;
+  background-color: #1F1F1F;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__columns{
+  width: 90%;
+  min-height: 350px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  color:#F2F2F2;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_place_footer {
+  height: 35px;
+  width: 183px;
+}
+
+.footer__author {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.footer__column-heading {
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__list{
+  padding: 0;
+  list-style: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__social-icons{
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
 }

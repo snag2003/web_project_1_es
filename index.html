@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aprender a aprender</title>
-  <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
-      <img class="logo logo_place_header" src="./images/logo_place_header.png" alt="logo de practicum">
+      <img class="logo logo_place_header" src="./images/logo_place_header.png" alt="Logo de practicum">
       <h1 class="header__title">Aprender a aprender</h1>
       <h2 class="header__subtitle">Las técnicas de aprendizaje más eficaces y avanzadas que puedes aplicar en tu vida diaria
         <a class="header__link" href="">Más información →</a>
       </h2>
       <img class="header__main-illustration" src="./images/header-image.png" alt="Chico con botas amarillas y chaqueta negra en la cima de una montaña">
-      <div class="header__square-pic"></div>
+      <div class="header__square"></div>
     </header>
     <main class="content">
       <section class="description">
@@ -40,7 +40,7 @@
           </li>
           <li class="table__cell">
             <h4 class="table__heading">73 %</h4>
-            <p class="table__text">Porcentaje de adultos en EE. UU. que se consideran alumnos de por vida <br><br>Pew Research Center</p>
+            <p class="table__text">Porcentaje de adultos en EE. UU. que se consideran alumnos de por vida<br><br>Pew Research Center</p>
           </li>
           <li class="table__cell">
             <h4 class="table__heading">1000 terabytes</h4>
@@ -78,6 +78,8 @@
       <section class="kaufman">
         <h2 class="section-title_theme_dark">Diez principios para adquirir habilidades rápidamente</h2>
         <h3 class="section-subtitle_theme_dark">por Josh Kaufman</h3>
+        <img class="kaufman__triangle" src="./images/kaufman-triangle.svg" alt="Un gran triángulo azul, sobre el que
+        Josh Kaufman reclama la propiedad">
         <ul class="table_theme_dark">
           <li class="table__cell_theme_dark">
             <h4 class="table__heading_theme_dark">1</h4>
@@ -120,12 +122,30 @@
             <p class="table__text_theme_dark">Enfatizar la cantidad y la velocidad</p>
           </li>
         </ul>
-        <img class="kaufman__triangle" src="./images/kaufman-triangle.svg" alt="Un gran triángulo azul, sobre el que
-        Josh Kaufman reclama la propiedad">
       </section>
     </main>
     <footer class="footer">
-
+      <div class="footer__columns">
+        <div class="footer__column footer__column_content_copyright">
+          <img class="logo logo_place_footer" src="./images/logo_place_footer.png" alt="logo de practicum">
+          <p class="footer__author">© 2023 Stephany Acosta</p>
+        </div>
+        <div class="footer__column footer__column_content_about">
+          <h2 class="footer__column-heading">Acerca de Practicum</h2>
+          <ul class="footer__list">
+            <li class="footer__column-link">Página principal</li>
+            <li class="footer__column-link">Misión</li>
+            <li class="footer__column-link">Profesiones</li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column_content_social">
+          <h2 class="footer__column-heading">Redes sociales</h2>
+          <ul class="footer__list">
+            <li class="footer__column-link"><img class="footer__social-icons" src="./images/facebook_white.svg" alt="Icono de Facebook">Facebook</li>
+            <li class="footer__column-link"><img class="footer__social-icons" src="./images/instagram_white.svg" alt="Icono de Instagram">Instagram</li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </div>
 </body>
