@@ -1,7 +1,7 @@
 # web_project_1_es
 
 ## Descripción del proyecto
-Página Web acerca de las técnicas de aprendizaje más eficaces y avanzadas para aplicar en la vida diaria. 
+Página Web acerca de las técnicas de aprendizaje más eficaces y avanzadas para aplicar en la vida diaria utilizando HTML y CSS.
 
 Ejemplo:
 *Cinco estrategias por Barbara Oakley
