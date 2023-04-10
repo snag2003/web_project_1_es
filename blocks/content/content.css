@@ -1,0 +1,75 @@
+@import url(./description/description.css);
+
+@import url(./techniques/techniques.css);
+
+@import url(./video/video.css);
+
+@import url(./oakley/oakley.css);
+
+@import url(./feynman/feynman.css);
+
+@import url(./digits/digits.css);
+
+@import url(./khan/khan.css);
+
+@import url(./kaufman/kaufman.css);
+
+@import url(./resources/resources.css);
+
+.logo_place_header {
+    height: 31px;
+    width: 154px;
+    position: absolute;
+    top: 30px;
+    left: 64px;
+    z-index: 2;
+}
+
+.section-title {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+}
+  
+.section-subtitle {
+    display: flex;
+    justify-content: center;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.section-title_theme_dark {
+    display: inline-block;
+    position: relative;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    width: 60%;
+    z-index: 2;
+}
+  
+.section-subtitle_theme_dark {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 0;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+    z-index: 2;
+}
+
+.logo_place_footer {
+    height: 35px;
+    width: 183px;
+}
