@@ -4,11 +4,11 @@
 Página Web acerca de las técnicas de aprendizaje más eficaces y avanzadas para aplicar en la vida diaria utilizando HTML y CSS.
 
 Ejemplo:
-*Cinco estrategias por Barbara Oakley
-*Charlas TED
-*Técnica Feynman
-*Datos y figuras acerca del aprendizaje y el cerebro
-*Principios para adquirir habilidades rápidamente
+* Cinco estrategias por Barbara Oakley
+* Charlas TED
+* Técnica Feynman
+* Datos y figuras acerca del aprendizaje y el cerebro
+* Principios para adquirir habilidades rápidamente
 
 ## Final
 Proximamente seria ideal:
