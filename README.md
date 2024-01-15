@@ -16,3 +16,5 @@ Proximamente seria ideal:
 2. Añadir más videos educativos
 3. Hacer el codigo más compatible con otros navegadores
 4. Diseñar un formulario para comentarios de usuarios
+
+Pages: https://snag2003.github.io/web_project_1_es/
