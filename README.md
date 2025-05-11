@@ -49,7 +49,7 @@ web_project_1_es/
 ### Installation
 1. Clone the repository
    ```
-   git clone https://github.com/yourusername/web_project_1_es.git
+   git clone https://github.com/snag3112/web_project_1_es.git
    ```
 2. Open the project folder
    ```
